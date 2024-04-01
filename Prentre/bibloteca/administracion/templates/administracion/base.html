@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administración de Libros</title>
+</head>
+<body>
+    <header>
+        <h1>Administración de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'crear_autor' %}">Crear Autor</a></li>
+                <li><a href="{% url 'crear_editorial' %}">Crear Editorial</a></li>
+                <li><a href="{% url 'crear_libro' %}">Crear Libro</a></li>
+                <li><a href="{% url 'buscar_libro' %}">Buscar Libro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
